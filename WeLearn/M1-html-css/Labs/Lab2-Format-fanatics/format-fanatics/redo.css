@@ -16,57 +16,63 @@
 
 .container {
   display:grid;
-  grid-template-columns: repeat(11, 1fr);
-  grid-template-rows: repeat(7, 1fr);
+grid-template-columns: 1fr 6fr 6fr 1fr 5fr 1fr;
+grid-template-rows: 1fr 2fr 6fr 2fr 1fr;
   /* Style the template for the grid */
 }
 
+.bsL {
+  display: grid;
+  grid-row-start: 1;
+  grid-row-end: 6;
+  grid-column-start: 0;
+  grid-column-end: 1;
+
+}
+.bsR {
+  display: grid;
+  grid-row: span 8;
+  text-align-last: center;
+}
+.border_top {
+  display: grid;
+  grid-column-start: 1;
+  grid-column-end: 7;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+.border_bottom {
+  display: grid;
+  grid-column: Span 8;
+}
 /* Making border black */
 #b {
   background-color: black;
 }
-.sideL{
-  grid-row: span 7;
-}
-.top{
-  grid-column: span 9;
-}
-.sideR {
-  grid-row: span 7;
-}
-.bottom {
-grid-column: span 9;
-}
+
 #title {
-  grid-column: span 9;
-}
-.caption {
-  grid-column: span 7;
-}
-#date {
-  grid-column: span 2;
+grid-column-start: 1;
+grid-column-end: 7;
+grid-row-start: 2;
+grid-row-end: 3;
+  /* grid-column-start: span 12;
+  grid-row: 1; */
 
 }
+
+#photo1 {
+grid-column: 1;
+}
+#photo2 {
+grid-column: 2;
+}
+#photo3 {
+grid-column: 3;
+}
 .photo {
-  grid-column: span 3;
-  grid-row: span 3;
+  grid-column: 100px 80px 200px;
+  grid-row: 100px 80px 200px;
+  /*insert format*/;
 }
-#p1 {
-  grid-column-start: 2;
-  grid-column-end: 5;
-  grid-row-start: 3;
-  grid-row-end: 6;
-}
-#p2 {
-  grid-column-start: 5;
-  grid-column-end: 8;
-  grid-row-start: 3;
-  grid-row-end: 6;
-}
-#p3 {
-  grid-column-start: 8;
-  grid-column-end: 11;
-  grid-row-start: 3;
-  grid-row-end: 6;
-}
+
 /* Style remaining grid elements */
