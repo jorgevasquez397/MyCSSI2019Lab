@@ -17,9 +17,17 @@ const movie = {
 };
 
 const food = {
-  food1: = 'Pizza',
-  food2: = 'Burrito',
-  food3: = 'Macaroni & cheese',
-  food4: = 'Hamburgers',
-  food5: = 'Watermelon',
+  food1: 'Pizza',
+  food2: 'Burrito',
+  food3: 'Macaroni & cheese',
+  food4: 'Hamburgers',
+  food5: 'Watermelon',
 };
+
+const seasons = ['Spring', 'Summer', 'Fall', 'Winter'];
+const friends = ['Alice', 'John', 'Bob'];
+const numbers = [5, 10, 2, 16, 50];
+
+const classes = [];
+classes.push({course: 'CSS 111', title: 'Computer Science I'});
+classes.push({course: 'Math 160', title: 'Calculus I'});
